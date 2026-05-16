@@ -1,0 +1,1 @@
+﻿loadstring(game:HttpGet("https://raw.githubusercontent.com/pumpkinpiee2113-prog/Vynx-Universal/refs/heads/main/Vynx%20Universal%20Source"))()
