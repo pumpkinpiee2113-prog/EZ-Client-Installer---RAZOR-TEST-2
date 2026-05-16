@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 20 | Scripts: 6 | Modules: 0 | Tags: 0
+-- Instances: 25 | Scripts: 9 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.EZ Client Installer
@@ -26,210 +26,245 @@ G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2"]["Name"] = [[Razor Client Installer]];
 
 
+-- StarterGui.EZ Client Installer.Razor Client Installer.MainPackageLoader
+G2L["3"] = Instance.new("LocalScript", G2L["2"]);
+G2L["3"]["Enabled"] = false;
+G2L["3"]["Name"] = [[MainPackageLoader]];
+G2L["3"]["Disabled"] = true;
+
+
+-- StarterGui.EZ Client Installer.Razor Client Installer.Checker
+G2L["4"] = Instance.new("LocalScript", G2L["2"]);
+G2L["4"]["Name"] = [[Checker]];
+
+
 -- StarterGui.EZ Client Installer.Razor Client Installer.UIStroke
-G2L["3"] = Instance.new("UIStroke", G2L["2"]);
-G2L["3"]["Thickness"] = 2;
-G2L["3"]["Color"] = Color3.fromRGB(180, 180, 180);
-G2L["3"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+G2L["5"] = Instance.new("UIStroke", G2L["2"]);
+G2L["5"]["Thickness"] = 2;
+G2L["5"]["Color"] = Color3.fromRGB(180, 180, 180);
+G2L["5"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
 -- StarterGui.EZ Client Installer.Razor Client Installer.Intro
-G2L["4"] = Instance.new("TextLabel", G2L["2"]);
-G2L["4"]["TextWrapped"] = true;
-G2L["4"]["BorderSizePixel"] = 2;
-G2L["4"]["TextSize"] = 17;
-G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4"]["Size"] = UDim2.new(0, 400, 0, 18);
-G2L["4"]["BorderColor3"] = Color3.fromRGB(180, 180, 180);
-G2L["4"]["Text"] = [[Thanks for using Razor]];
-G2L["4"]["Name"] = [[Intro]];
+G2L["6"] = Instance.new("TextLabel", G2L["2"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["BorderSizePixel"] = 2;
+G2L["6"]["TextSize"] = 17;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["6"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Size"] = UDim2.new(0, 400, 0, 18);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(180, 180, 180);
+G2L["6"]["Text"] = [[Thanks for using Razor]];
+G2L["6"]["Name"] = [[Intro]];
 
 
 -- StarterGui.EZ Client Installer.Razor Client Installer.Main
-G2L["5"] = Instance.new("TextLabel", G2L["2"]);
-G2L["5"]["TextWrapped"] = true;
-G2L["5"]["BorderSizePixel"] = 0;
-G2L["5"]["TextSize"] = 14;
-G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
-G2L["5"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5"]["BackgroundTransparency"] = 1;
-G2L["5"]["Size"] = UDim2.new(0, 400, 0, 59);
-G2L["5"]["BorderColor3"] = Color3.fromRGB(180, 180, 180);
-G2L["5"]["Text"] = [[Razor Hub needs a few moments because your a new user. Please wait]];
-G2L["5"]["Name"] = [[Main]];
-G2L["5"]["Position"] = UDim2.new(0, 0, 0.072, 0);
+G2L["7"] = Instance.new("TextLabel", G2L["2"]);
+G2L["7"]["TextWrapped"] = true;
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Light, Enum.FontStyle.Normal);
+G2L["7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["Size"] = UDim2.new(0, 400, 0, 59);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(180, 180, 180);
+G2L["7"]["Text"] = [[Razor Hub needs a few moments because your a new user. Please wait]];
+G2L["7"]["Name"] = [[Main]];
+G2L["7"]["Position"] = UDim2.new(0, 0, 0.38, 0);
 
 
 -- StarterGui.EZ Client Installer.Razor Client Installer.UIDragDetector
-G2L["6"] = Instance.new("UIDragDetector", G2L["2"]);
+G2L["8"] = Instance.new("UIDragDetector", G2L["2"]);
 
 
 
 -- StarterGui.EZ Client Installer.Razor Client Installer.Close
-G2L["7"] = Instance.new("TextButton", G2L["2"]);
-G2L["7"]["TextWrapped"] = true;
-G2L["7"]["BorderSizePixel"] = 0;
-G2L["7"]["TextSize"] = 20;
-G2L["7"]["TextScaled"] = true;
-G2L["7"]["TextColor3"] = Color3.fromRGB(180, 180, 180);
-G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7"]["ZIndex"] = 26;
-G2L["7"]["BackgroundTransparency"] = 1;
-G2L["7"]["Selected"] = true;
-G2L["7"]["Size"] = UDim2.new(0, 34, 0, 17);
-G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["Text"] = [[X]];
-G2L["7"]["Name"] = [[Close]];
-G2L["7"]["Position"] = UDim2.new(0.914, 0, 0, 0);
+G2L["9"] = Instance.new("TextButton", G2L["2"]);
+G2L["9"]["TextWrapped"] = true;
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextSize"] = 20;
+G2L["9"]["TextScaled"] = true;
+G2L["9"]["TextColor3"] = Color3.fromRGB(180, 180, 180);
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9"]["ZIndex"] = 26;
+G2L["9"]["BackgroundTransparency"] = 1;
+G2L["9"]["Selected"] = true;
+G2L["9"]["Size"] = UDim2.new(0, 34, 0, 17);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[X]];
+G2L["9"]["Name"] = [[Close]];
+G2L["9"]["Position"] = UDim2.new(0.914, 0, 0, 0);
 
 
 -- StarterGui.EZ Client Installer.Razor Client Installer.Close.close
-G2L["8"] = Instance.new("LocalScript", G2L["7"]);
-G2L["8"]["Name"] = [[close]];
+G2L["a"] = Instance.new("LocalScript", G2L["9"]);
+G2L["a"]["Name"] = [[close]];
 
 
 -- StarterGui.EZ Client Installer.Razor Client Installer.Close.hover
-G2L["9"] = Instance.new("LocalScript", G2L["7"]);
-G2L["9"]["Name"] = [[hover]];
+G2L["b"] = Instance.new("LocalScript", G2L["9"]);
+G2L["b"]["Name"] = [[hover]];
 
 
 -- StarterGui.EZ Client Installer.Razor Client Installer.LoadingBar
-G2L["a"] = Instance.new("Frame", G2L["2"]);
-G2L["a"]["BorderSizePixel"] = 0;
-G2L["a"]["BackgroundColor3"] = Color3.fromRGB(126, 126, 126);
-G2L["a"]["Size"] = UDim2.new(0, 328, 0, 31);
-G2L["a"]["Position"] = UDim2.new(0.09, 0, 0.648, 0);
-G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a"]["Name"] = [[LoadingBar]];
+G2L["c"] = Instance.new("Frame", G2L["2"]);
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(126, 126, 126);
+G2L["c"]["Size"] = UDim2.new(0, 328, 0, 31);
+G2L["c"]["Position"] = UDim2.new(0.09, 0, 0.648, 0);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Name"] = [[LoadingBar]];
 
 
 -- StarterGui.EZ Client Installer.Razor Client Installer.LoadingBar.UIStroke
-G2L["b"] = Instance.new("UIStroke", G2L["a"]);
-G2L["b"]["Thickness"] = 2;
-G2L["b"]["Color"] = Color3.fromRGB(180, 180, 180);
-G2L["b"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+G2L["d"] = Instance.new("UIStroke", G2L["c"]);
+G2L["d"]["Thickness"] = 2;
+G2L["d"]["Color"] = Color3.fromRGB(180, 180, 180);
+G2L["d"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
 -- StarterGui.EZ Client Installer.Razor Client Installer.LoadingBar.LoadBar
-G2L["c"] = Instance.new("Frame", G2L["a"]);
-G2L["c"]["ZIndex"] = 2;
-G2L["c"]["BorderSizePixel"] = 0;
-G2L["c"]["BackgroundColor3"] = Color3.fromRGB(0, 172, 0);
-G2L["c"]["Size"] = UDim2.new(0, 327, 0, 30);
-G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c"]["Name"] = [[LoadBar]];
+G2L["e"] = Instance.new("Frame", G2L["c"]);
+G2L["e"]["ZIndex"] = 2;
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(0, 172, 0);
+G2L["e"]["Size"] = UDim2.new(0, 327, 0, 30);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Name"] = [[LoadBar]];
 
 
 -- StarterGui.EZ Client Installer.Razor Client Installer.LoadingBar.LoadBar.Loading
-G2L["d"] = Instance.new("LocalScript", G2L["c"]);
-G2L["d"]["Name"] = [[Loading]];
+G2L["f"] = Instance.new("LocalScript", G2L["e"]);
+G2L["f"]["Name"] = [[Loading]];
+
+
+-- StarterGui.EZ Client Installer.Razor Client Installer.LoadingBar.LoadBar.Notifiy
+G2L["10"] = Instance.new("LocalScript", G2L["e"]);
+G2L["10"]["Name"] = [[Notifiy]];
 
 
 -- StarterGui.EZ Client Installer.Razor Client Installer.LoadingBar.LoadBar.EmptySize
-G2L["e"] = Instance.new("StringValue", G2L["c"]);
-G2L["e"]["Name"] = [[EmptySize]];
-G2L["e"]["Value"] = [[{0, 0},{0, 30}]];
+G2L["11"] = Instance.new("StringValue", G2L["e"]);
+G2L["11"]["Name"] = [[EmptySize]];
+G2L["11"]["Value"] = [[{0, 0},{0, 30}]];
 
 
 -- StarterGui.EZ Client Installer.Razor Client Installer.LoadingBar.LoadBar.FullSize
-G2L["f"] = Instance.new("StringValue", G2L["c"]);
-G2L["f"]["Name"] = [[FullSize]];
-G2L["f"]["Value"] = [[{0, 327},{0, 30}]];
+G2L["12"] = Instance.new("StringValue", G2L["e"]);
+G2L["12"]["Name"] = [[FullSize]];
+G2L["12"]["Value"] = [[{0, 327},{0, 30}]];
 
 
 -- StarterGui.EZ Client Installer.Razor Client Installer.LoadingBar.LoadBar.UIGradient
-G2L["10"] = Instance.new("UIGradient", G2L["c"]);
-G2L["10"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 172, 0)),ColorSequenceKeypoint.new(0.501, Color3.fromRGB(0, 255, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 172, 0))};
+G2L["13"] = Instance.new("UIGradient", G2L["e"]);
+G2L["13"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 172, 0)),ColorSequenceKeypoint.new(0.501, Color3.fromRGB(0, 255, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 172, 0))};
+
+
+-- StarterGui.EZ Client Installer.Razor Client Installer.LoadingBar.LocalScript
+G2L["14"] = Instance.new("LocalScript", G2L["c"]);
+
 
 
 -- StarterGui.EZ Client Installer.Razor Client Installer.IsAOldUser
-G2L["11"] = Instance.new("BoolValue", G2L["2"]);
-G2L["11"]["Name"] = [[IsAOldUser]];
-G2L["11"]["Value"] = true;
+G2L["15"] = Instance.new("BoolValue", G2L["2"]);
+G2L["15"]["Name"] = [[IsAOldUser]];
+G2L["15"]["Value"] = true;
 
 
 -- StarterGui.EZ Client Installer.Razor Client Installer.IsAOldUser.PackageTrigger
-G2L["12"] = Instance.new("LocalScript", G2L["11"]);
-G2L["12"]["Enabled"] = false;
-G2L["12"]["Name"] = [[PackageTrigger]];
-G2L["12"]["Disabled"] = true;
+G2L["16"] = Instance.new("LocalScript", G2L["15"]);
+G2L["16"]["Enabled"] = false;
+G2L["16"]["Name"] = [[PackageTrigger]];
+G2L["16"]["Disabled"] = true;
 
 
--- StarterGui.EZ Client Installer.Razor Client Installer.MainPackageLoader
-G2L["13"] = Instance.new("LocalScript", G2L["2"]);
-G2L["13"]["Enabled"] = false;
-G2L["13"]["Name"] = [[MainPackageLoader]];
-G2L["13"]["Disabled"] = true;
+-- StarterGui.EZ Client Installer.Razor Client Installer.Run Script
+G2L["17"] = Instance.new("TextButton", G2L["2"]);
+G2L["17"]["TextWrapped"] = true;
+G2L["17"]["Interactable"] = false;
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextSize"] = 31;
+G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(0, 177, 112);
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["17"]["Size"] = UDim2.new(0, 125, 0, 50);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[Run Razor]];
+G2L["17"]["Name"] = [[Run Script]];
+G2L["17"]["Visible"] = false;
+G2L["17"]["Position"] = UDim2.new(0.3425, 0, 0.616, 0);
+
+
+-- StarterGui.EZ Client Installer.Razor Client Installer.Run Script.UICorner
+G2L["18"] = Instance.new("UICorner", G2L["17"]);
+G2L["18"]["CornerRadius"] = UDim.new(0, 4);
+
+
+-- StarterGui.EZ Client Installer.Razor Client Installer.Run Script.button
+G2L["19"] = Instance.new("LocalScript", G2L["17"]);
+G2L["19"]["Name"] = [[button]];
 
 
 -- StarterGui.EZ Client Installer.Razor Client Installer.Checker
-G2L["14"] = Instance.new("LocalScript", G2L["2"]);
-G2L["14"]["Name"] = [[Checker]];
-
-
--- StarterGui.EZ Client Installer.Razor Client Installer.Close.close
-local function C_8()
-local script = G2L["8"];
-	local textLabel = script.Parent
-	local StarterGui = game:GetService("StarterGui")
+local function C_4()
+local script = G2L["4"];
+	local player = game:GetService("Players").LocalPlayer
+	local HttpService = game:GetService("HttpService")
+	local userId = tostring(player.UserId)
 	
-	------------------------------------------------
-	-- FIND TOP UI CONTAINER
-	------------------------------------------------
-	local function getTopParent(obj)
-		local current = obj
-		while current.Parent do
-			if current:IsA("ScreenGui") then
-				return current
-			end
-			current = current.Parent
-		end
-		return obj
+	local BLOB_ID = "019e32a8-7e8d-71cc-bb7f-b60d13760df7"
+	local BASE_URL = "https://jsonblob.com/api/jsonBlob"
+	
+	local function saveData(isOldUser)
+		local success, err = pcall(function()
+			local current = HttpService:GetAsync(BASE_URL .. "/" .. BLOB_ID)
+			local data = HttpService:JSONDecode(current)
+			data[userId] = isOldUser
+			HttpService:PutAsync(BASE_URL .. "/" .. BLOB_ID, {
+				Headers = {["Content-Type"] = "application/json"},
+				Body = HttpService:JSONEncode(data)
+			})
+		end)
+		return success
 	end
 	
-	local topUI = getTopParent(textLabel)
+	local function loadData()
+		local success, response = pcall(function()
+			return HttpService:GetAsync(BASE_URL .. "/" .. BLOB_ID)
+		end)
 	
-	------------------------------------------------
-	-- NOTIFICATION FUNCTION
-	------------------------------------------------
-	local function notif()
-		StarterGui:SetCore("SendNotification", {
-			Title = "Internal Installer",
-			Text = "Installer has been closed, all installation packages have been removed",
-			Button1 = "Okay",
-			Duration = 3
-		})
+		if success then
+			local data = HttpService:JSONDecode(response)
+			return data[userId]
+		end
+		return nil
 	end
 	
-	------------------------------------------------
-	-- ENABLE CLICK
-	------------------------------------------------
-	textLabel.Active = true
+	local isOldUser = loadData()
 	
-	textLabel.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
-	
-			-- show notification first
-			notif()
-	
-			-- small delay so notification appears
-			task.wait(0.1)
-	
-			-- destroy full UI hierarchy
-			if topUI then
-				topUI:Destroy()
-			end
-		end
-	end)
+	if isOldUser == nil then
+		saveData(false)
+		print("New user")
+	elseif isOldUser then
+		print("Old user")
+	else
+		print("New user (has used before)")
+	end
 end;
-task.spawn(C_8);
+task.spawn(C_4);
+-- StarterGui.EZ Client Installer.Razor Client Installer.Close.close
+local function C_a()
+local script = G2L["a"];
+	task.wait(25)
+	
+end;
+task.spawn(C_a);
 -- StarterGui.EZ Client Installer.Razor Client Installer.Close.hover
-local function C_9()
-local script = G2L["9"];
+local function C_b()
+local script = G2L["b"];
 	local button = script.Parent
 	
 	-- Original settings
@@ -253,10 +288,10 @@ local script = G2L["9"];
 		button.TextColor3 = originalText
 	end)
 end;
-task.spawn(C_9);
+task.spawn(C_b);
 -- StarterGui.EZ Client Installer.Razor Client Installer.LoadingBar.LoadBar.Loading
-local function C_d()
-local script = G2L["d"];
+local function C_f()
+local script = G2L["f"];
 	local bar = script.Parent
 	local random = Random.new()
 	
@@ -316,53 +351,67 @@ local script = G2L["d"];
 		end
 	end
 end;
-task.spawn(C_d);
--- StarterGui.EZ Client Installer.Razor Client Installer.Checker
+task.spawn(C_f);
+-- StarterGui.EZ Client Installer.Razor Client Installer.LoadingBar.LoadBar.Notifiy
+local function C_10()
+local script = G2L["10"];
+	local StarterGui = game:GetService("StarterGui")
+		
+		wait(17)
+		
+		StarterGui:SetCore("SendNotification", {
+			Title = "Internal Installer",
+			Text = "Razor Client has packages have been attatched, deleting installation packages...",
+			Button1 = "Okay",
+			Duration = 3,
+		})
+		wait(7)
+		
+		StarterGui:SetCore("SendNotification", {StarterGui:SetCore("SendNotification", {
+		Title = "Installer Deleter",
+		Text = "Installation packages have been deleted",
+		Button1 = "Okay",
+		Duration = 3,
+		})})
+end;
+task.spawn(C_10);
+-- StarterGui.EZ Client Installer.Razor Client Installer.LoadingBar.LocalScript
 local function C_14()
 local script = G2L["14"];
-	local player = game:GetService("Players").LocalPlayer
-	local HttpService = game:GetService("HttpService")
-	local userId = tostring(player.UserId)
+	task.wait(20)
 	
-	local BLOB_ID = "019e32a8-7e8d-71cc-bb7f-b60d13760df7"
-	local BASE_URL = "https://jsonblob.com/api/jsonBlob"
-	
-	local function saveData(isOldUser)
-		local success, err = pcall(function()
-			local current = HttpService:GetAsync(BASE_URL .. "/" .. BLOB_ID)
-			local data = HttpService:JSONDecode(current)
-			data[userId] = isOldUser
-			HttpService:PutAsync(BASE_URL .. "/" .. BLOB_ID, {
-				Headers = {["Content-Type"] = "application/json"},
-				Body = HttpService:JSONEncode(data)
-			})
-		end)
-		return success
+	local parent = script.Parent.Parent
+	local main = parent:FindFirstChild("Main")
+	if main and main:IsA("TextLabel") then
+		main.Text = "Please select an option."
 	end
 	
-	local function loadData()
-		local success, response = pcall(function()
-			return HttpService:GetAsync(BASE_URL .. "/" .. BLOB_ID)
-		end)
-	
-		if success then
-			local data = HttpService:JSONDecode(response)
-			return data[userId]
-		end
-		return nil
+	local runBtn = parent:FindFirstChild("Run Script")
+	if runBtn then
+		runBtn.Visible = true
+		runBtn.Interactable = true
 	end
 	
-	local isOldUser = loadData()
-	
-	if isOldUser == nil then
-		saveData(false)
-		print("New user")
-	elseif isOldUser then
-		print("Old user")
-	else
-		print("New user (has used before)")
-	end
+	script.Parent:Destroy()
 end;
 task.spawn(C_14);
+-- StarterGui.EZ Client Installer.Razor Client Installer.Run Script.button
+local function C_19()
+local script = G2L["19"];
+	local button = script.Parent
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/pumpkinpiee2113-prog/Razor-Universal/refs/heads/main/Razor%20Universal%20Source"))()
+	
+		task.wait(0.1)
+	
+		local gui = button:FindFirstAncestorOfClass("ScreenGui")
+		if gui then
+			gui:Destroy()
+		else
+			button:Destroy()
+		end
+	end)
+end;
+task.spawn(C_19);
 
 return G2L["1"], require;
